@@ -2,11 +2,12 @@
     display: grid;
 
     .featured {
-        margin: 0 15vh;
         margin-top: 5rem;
         @include centerContentFlex;
         gap: 1rem;
         grid-row: 1;
+        flex-flow: wrap;
+
 
         img {
             height: $hero-image-size-xl;
@@ -16,7 +17,7 @@
     }
 
     .detail {
-        margin: 0 15vh;
+        // margin: 0 15vh;
         margin-top: 5rem;
         grid-row: 2;
         text-align: center;
@@ -26,7 +27,7 @@
             &-items {
                 @include centerContentGrid;
                 grid-template-columns: repeat(5, 1fr);
-                gap: 30rem;
+                gap: 5rem;
 
                 & img {
                     height: $hero-image-size-ms;

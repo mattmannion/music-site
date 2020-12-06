@@ -18,8 +18,10 @@ class insertNavFooter {
         <div class="nav_top">
             <div class="nav_top-container container">
                 <div class="nav_top-logo center">
-                    <img src="${navLogo}" alt="Music Site Logo">
-                    <h1>Music Site</h1>
+                    <a href="index.html">
+                        <img src="${navLogo}" alt="Music Site Logo">
+                        <h1>Music Site</h1>
+                    </a>
                 </div>
                 <div class="nav_top-search">
                     <button class="nav_top-search-button">

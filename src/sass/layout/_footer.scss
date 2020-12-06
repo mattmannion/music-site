@@ -4,9 +4,9 @@
 
     &_container {
         padding: 3rem;
+        margin: 0 20vh;
         @include centerContentGrid;
         grid-template-columns: 1fr 1fr;
-
         transform: translateX(-12.5rem);
     }
 
@@ -37,7 +37,7 @@
         &-container {
             @include centerContentFlex;
             font-size: 1.75rem;
-            gap: 2.5rem;
+            gap: 2.5%;
         }
     }
 }
