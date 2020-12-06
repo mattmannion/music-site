@@ -1,0 +1,87 @@
+.nav {
+
+    &_top {
+        background-color: $light-gray;
+        padding: 2rem;
+
+        &-container {
+            font-size: 1.5rem;
+            margin: 0 10vh;
+            @include centerContentGrid;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+        }
+
+        &-logo h1 {
+            width: 11rem;
+        }
+
+        &-search {
+            position: relative;
+            display: flex;
+            min-width: 60rem;
+            @include centerContentFlex;
+
+            &-button {
+                font-size: 3rem;
+                color: $light-gray;
+                background-color: $main-gray;
+                border: transparent;
+                height: 4.3rem;
+                width: 4.7rem;
+                border-radius: .5rem 0 0 .5rem;
+                outline: 0;
+                cursor: pointer;
+                @include centerContentFlex;
+            }
+
+
+
+            &-bar {
+                font-size: 2rem;
+                border: .15rem solid $main-gray;
+                border-radius: 0 .5rem .5rem 0;
+                height: 3rem;
+                width: 100%;
+                padding: .5rem;
+                outline: 0;
+            }
+        }
+
+        &-phoneNumber {
+            @include centerContentFlex;
+
+            &-icon {
+                font-size: 2.5rem;
+                margin-right: 1rem;
+                transform: translateY(5px);
+            }
+
+            & p {
+                font-size: 2rem;
+            }
+        }
+
+        &-cart {
+
+            &-icon {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    &_bot {
+        border-top: .1rem solid $light-gray;
+        border-bottom: .1rem solid $light-gray;
+        margin-top: 2rem;
+
+        &-container {
+            font-size: 1.6rem;
+            color: main-gray;
+            padding: .5rem 0;
+            margin: 0 15vh;
+            @include centerContentGrid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+
+}

@@ -1,0 +1,8 @@
+.cache
+.parcel-cache
+node_modules
+dist
+.prettierrc
+music.code-workspace
+ubuntu
+ubuntu.pub

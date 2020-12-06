@@ -1,0 +1,53 @@
+.main {
+    display: grid;
+
+    .featured {
+        margin: 0 15vh;
+        margin-top: 5rem;
+        @include centerContentFlex;
+        gap: 1rem;
+        grid-row: 1;
+
+        img {
+            height: $hero-image-size-xl;
+            border-radius: .5rem;
+            overflow: hidden;
+        }
+    }
+
+    .detail {
+        margin: 0 15vh;
+        margin-top: 5rem;
+        grid-row: 2;
+        text-align: center;
+
+        &_carousel {
+
+            &-items {
+                @include centerContentGrid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 30rem;
+
+                & img {
+                    height: $hero-image-size-ms;
+                    border-radius: .5rem;
+                    overflow: hidden;
+                }
+
+                & .arrows {
+                    color: $medium-gray;
+                    font-size: 5rem;
+                    cursor: pointer;
+                }
+
+                &-left-arrow {
+                    transform: translateX(12.5rem);
+                }
+
+                &-right-arrow {
+                    transform: translateX(-12.5rem);
+                }
+            }
+        }
+    }
+}

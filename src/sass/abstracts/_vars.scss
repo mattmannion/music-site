@@ -1,0 +1,22 @@
+$light-gray: #eee;
+$medium-gray: #aaa;
+$main-gray: #555;
+
+$footer-color: #555;
+
+$hero-image-size-xl: 62.5rem;
+$hero-image-size-l: 50rem;
+$hero-image-size-m: 40rem;
+$hero-image-size-ms: 25rem;
+
+@mixin centerContentGrid {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+@mixin centerContentFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

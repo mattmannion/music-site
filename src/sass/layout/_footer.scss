@@ -1,0 +1,43 @@
+.footer {
+    margin-top: 5rem;
+    background-color: $main-gray;
+
+    &_container {
+        padding: 3rem;
+        @include centerContentGrid;
+        grid-template-columns: 1fr 1fr;
+
+        transform: translateX(-12.5rem);
+    }
+
+    &_logo {
+        font-size: 2.5rem;
+        @include centerContentFlex;
+    }
+
+    &_nav {
+        font-size: 2rem;
+        text-align: center;
+        @include centerContentFlex;
+        flex-flow: wrap;
+        gap: 5rem;
+
+        &-titles {
+            &-list {
+                margin-top: 1rem;
+                list-style-type: none;
+            }
+        }
+    }
+
+    &_legal {
+        margin-top: 2rem;
+        padding: 2rem;
+
+        &-container {
+            @include centerContentFlex;
+            font-size: 1.75rem;
+            gap: 2.5rem;
+        }
+    }
+}

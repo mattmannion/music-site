@@ -1,0 +1,21 @@
+{
+    "name": "music",
+    "version": "1.0.0",
+    "description": "music site",
+    "main": "index.html",
+    "scripts": {
+        "start": "parcel src/index.html",
+        "build": "parcel build src/index.html",
+        "sass": "sass src/sass/main.scss src/css/style.css --watch"
+    },
+    "author": "Matt Mannion, William Taylor",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel": "^1.12.4",
+        "sass": "^1.29.0"
+    },
+    "dependencies": {
+        "core-js": "^3.8.1",
+        "regenerator-runtime": "^0.13.7"
+    }
+}
