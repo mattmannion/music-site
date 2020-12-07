@@ -11,6 +11,8 @@ $hero-image-size-ms: 30rem;
 $hero-image-size-s: 20rem;
 $hero-image-size-xs: 10rem;
 
+$image-viewer-size: 10rem;
+
 @mixin centerContentGrid {
     display: grid;
     align-items: center;

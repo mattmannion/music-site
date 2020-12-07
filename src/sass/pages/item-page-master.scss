@@ -1,0 +1,147 @@
+.showcase_item {
+    display: grid;
+    align-items: flex-start;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5rem;
+    height: 80vh;
+
+    &-viewer {
+        @include centerContentFlex;
+        flex-flow: wrap;
+
+        &-grid {
+            @include centerContentGrid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 15re w;
+
+            li {
+                list-style: none;
+
+                img {
+                    padding: .1rem .3rem;
+                    height: $image-viewer-size;
+                    width: $image-viewer-size;
+                    border-radius: .5rem;
+                }
+            }
+        }
+    }
+
+    &-main {
+
+        img {
+            border-radius: .5rem;
+        }
+    }
+
+    &-details {
+        @include centerContentGrid;
+        font-size: 2rem;
+        height: 100%;
+
+        &-price {
+            @include centerContentFlex;
+            gap: 10%;
+        }
+
+        &-perks {
+
+            ul {
+                list-style: none;
+                @include centerContentGrid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 5rem;
+
+                li {
+                    margin: .5rem;
+                    width: 25rem;
+                    @include centerContentFlex;
+                    border: $main-gray .2rem solid;
+
+                    ion-icon {
+                        font-size: 3rem;
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+
+        &-addToCart {
+            margin-top: 5rem;
+        }
+
+        &-options {
+            margin-top: 5rem;
+
+            &-grid {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+
+                    img {
+                        padding: .1rem .3rem;
+                        height: $image-viewer-size;
+                        width: $image-viewer-size;
+                        border-radius: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.description {
+    margin: 0 15rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+
+    &_links {
+        @include centerContentGrid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        background-color: $medium-gray;
+        border-radius: .2rem;
+        padding: 1rem;
+
+        li {
+            font-size: 2.5rem;
+            margin-right: 2rem;
+        }
+    }
+
+    &_info {
+        margin-top: 5rem;
+
+        p {
+            margin-top: 5rem;
+        }
+    }
+
+    &_technical {
+        margin-top: 5rem;
+        width: 100%;
+        @include centerContentFlex;
+
+        &-table {
+            width: 100%;
+            background-color: $light-gray;
+            border-collapse: collapse;
+
+            tr:nth-child(even) {
+                background-color: $medium-gray;
+            }
+
+            td {
+                padding: .5rem;
+                text-align: left;
+            }
+
+            td:nth-child(odd) {
+                width: 15%;
+            }
+        }
+    }
+}

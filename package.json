@@ -5,6 +5,9 @@
     "main": "index.html",
     "scripts": {
         "start": "parcel src/index.html",
+        "start2": "parcel src/html/products/item-page-master.html",
+        "start3": "parcel src/index.html",
+        "start4": "parcel src/index.html",
         "build": "parcel build src/index.html",
         "sass": "sass src/sass/main.scss src/css/style.css --watch"
     },
