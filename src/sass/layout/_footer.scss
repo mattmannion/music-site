@@ -10,9 +10,14 @@
         transform: translateX(-12.5rem);
     }
 
-    &_logo {
+    &_logo a:visited,
+    &_logo a:link,
+    &_logo a:active,
+    &_logo a:hover {
         font-size: 2.5rem;
         @include centerContentFlex;
+        text-decoration: none;
+        color: black;
     }
 
     &_nav {

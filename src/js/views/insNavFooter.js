@@ -17,19 +17,19 @@ class insertNavFooter {
         const markup = `
         <div class="nav_top">
             <div class="nav_top-container container">
-                <div class="nav_top-logo center">
+                <div class="nav_top-logo nav_top-box">
                     <a href="index.html">
                         <img src="${navLogo}" alt="Music Site Logo">
                         <h1>Music Site</h1>
                     </a>
                 </div>
-                <div class="nav_top-search">
+                <div class="nav_top-search nav_top-box">
                     <button class="nav_top-search-button">
                         <ion-icon name="search"></ion-icon>
                     </button>
                     <input type="text" placeholder="Search here..." class="nav_top-search-bar">
                 </div>
-                <div class="nav_top-phoneNumber">
+                <div class="nav_top-phoneNumber nav_top-box">
                     <div class="nav_top-phoneNumber-icon">
                         <ion-icon name="call-outline"></ion-icon>
                     </div>
@@ -37,7 +37,7 @@ class insertNavFooter {
                         (123)456-7890
                     </p>
                 </div>
-                <div class="nav_top-cart">
+                <div class="nav_top-cart nav_top-box">
                     <div class="nav_top-cart-icon">
                         <ion-icon name="cart-outline"></ion-icon>
                     </div>
@@ -76,8 +76,10 @@ class insertNavFooter {
         const markup = `
         <div class="footer_container container">
             <div class="footer_logo">
-                <img src="${footerLogo}" alt="MS Logo">
-                <h1>Music Site</h1>
+                <a href="index.html">
+                    <img src="${footerLogo}" alt="MS Logo">
+                    <h1>Music Site</h1>
+                </a>
             </div>
             <div class="footer_nav">
                 <div class="footer_nav-titles">

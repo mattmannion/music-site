@@ -27,10 +27,10 @@
             &-items {
                 @include centerContentGrid;
                 grid-template-columns: repeat(5, 1fr);
-                gap: 5rem;
+                gap: 20rem;
 
                 & img {
-                    height: $hero-image-size-ms;
+                    height: $hero-image-size-s;
                     border-radius: .5rem;
                     overflow: hidden;
                 }
@@ -42,11 +42,11 @@
                 }
 
                 &-left-arrow {
-                    transform: translateX(12.5rem);
+                    transform: translateX(10rem);
                 }
 
                 &-right-arrow {
-                    transform: translateX(-12.5rem);
+                    transform: translateX(-10rem);
                 }
             }
         }
