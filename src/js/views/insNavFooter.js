@@ -29,17 +29,17 @@ class insertNavFooter {
                     </button>
                     <input type="text" placeholder="Search here..." class="nav_top-search-bar">
                 </div>
-                <div class="nav_top-phoneNumber nav_top-box">
-                    <div class="nav_top-phoneNumber-icon">
-                        <ion-icon name="call-outline"></ion-icon>
+                <div class="nav_top-group">
+                    <div class="nav_top-group-phoneNumber nav_top-box">
+                        <div class="nav_top-phoneNumber-icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <p>(123)456-7890</p>
                     </div>
-                    <p>
-                        (123)456-7890
-                    </p>
-                </div>
-                <div class="nav_top-cart nav_top-box">
-                    <div class="nav_top-cart-icon">
-                        <ion-icon name="cart-outline"></ion-icon>
+                    <div class="nav_top-group-cart nav_top-box">
+                        <div class="nav_top-cart-icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
