@@ -21,11 +21,11 @@
     }
 
     &_nav {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         @include centerContentFlex;
         flex-flow: wrap;
-        gap: 5rem;
+        gap: 2rem;
 
         &-titles {
             &-list {

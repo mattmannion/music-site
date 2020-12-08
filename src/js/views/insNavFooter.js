@@ -18,7 +18,7 @@ class insertNavFooter {
         <div class="nav_top">
             <div class="nav_top-container container">
                 <div class="nav_top-logo nav_top-box">
-                    <a href="index.html">
+                    <a href="../../index.html">
                         <img src="${navLogo}" alt="Music Site Logo">
                         <h1>Music Site</h1>
                     </a>
