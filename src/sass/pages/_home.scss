@@ -1,56 +1,63 @@
-h1 {
-    font-size: 5rem;
-}
+.big-container {
+    @include centerContentFlex;
 
-.main {
-    display: grid;
+    .main {
+        display: grid;
 
-    .featured {
-        margin-top: 5rem;
-        @include centerContentFlex;
-        gap: 1rem;
-        grid-row: 1;
-        flex-flow: wrap;
+        .featured {
+            margin-top: 5rem;
+            @include centerContentFlex;
+            gap: 1rem;
+            grid-row: 1;
+            flex-flow: wrap;
 
 
-        img {
-            height: $hero-image-size-xl;
-            border-radius: .5rem;
-            overflow: hidden;
+            img {
+                height: $hero-image-size-xl;
+                border-radius: .5rem;
+                overflow: hidden;
+            }
         }
-    }
 
-    .detail {
-        // margin: 0 15vh;
-        margin-top: 5rem;
-        grid-row: 2;
-        text-align: center;
+        .detail {
+            // margin: 0 15vh;
+            margin-top: 5rem;
+            grid-row: 2;
+            text-align: center;
 
-        &_carousel {
+            &_carousel {
 
-            &-items {
-                @include centerContentGrid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: 20%;
+                &-items {
+                    @include centerContentGrid;
+                    grid-template-columns: repeat(3, 1fr);
+                    // gap: 10%;
 
-                & img {
-                    height: $hero-image-size-s;
-                    border-radius: .5rem;
-                    overflow: hidden;
-                }
+                    &-container {
+                        @include centerContentFlex;
+                        flex-flow: wrap;
+                        gap: 1%;
 
-                & .arrows {
-                    color: $medium-gray;
-                    font-size: 5rem;
-                    cursor: pointer;
-                }
+                        img {
+                            height: $hero-image-size-s;
+                            margin-top: 1%;
+                            border-radius: .5rem;
+                            overflow: hidden;
+                        }
+                    }
 
-                &-left-arrow {
-                    transform: translateX(10rem);
-                }
+                    & .arrows {
+                        color: $medium-gray;
+                        font-size: 5rem;
+                        cursor: pointer;
+                    }
 
-                &-right-arrow {
-                    transform: translateX(-10rem);
+                    &-left-arrow {
+                        transform: translateX(10rem);
+                    }
+
+                    &-right-arrow {
+                        transform: translateX(-10rem);
+                    }
                 }
             }
         }

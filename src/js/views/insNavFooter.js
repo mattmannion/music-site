@@ -47,7 +47,7 @@ class insertNavFooter {
         <div class="nav_bot">
             <div class="nav_bot-container container">
                 <div class="nav_bot-category">
-                    Shop
+                    <a href="../../html/products/item-page-master.html">Shop</a>
                 </div>
                 <div class="nav_bot-new">
                     New Items
@@ -76,7 +76,7 @@ class insertNavFooter {
         const markup = `
         <div class="footer_container container">
             <div class="footer_logo">
-                <a href="index.html">
+                <a href="../../index.html">
                     <img src="${footerLogo}" alt="MS Logo">
                     <h1>Music Site</h1>
                 </a>
