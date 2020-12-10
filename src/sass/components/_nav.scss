@@ -40,8 +40,6 @@
                 @include centerContentFlex;
             }
 
-
-
             &-bar {
                 font-size: 2rem;
                 border: .15rem solid $main-gray;
@@ -91,7 +89,10 @@
             @include centerContentFlex;
             gap: 10%;
             flex-flow: wrap;
+
+            div {
+                padding: .5rem;
+            }
         }
     }
-
 }
