@@ -14,6 +14,6 @@
     - parcel uses linked main.scss file in all html heads to compile and link scss to css
     - parcel needs to be pointed to each location to compile and link files correctly and reliably (see above or package.json)
 
-- build: ("build": "parcel build src/index.html src/html/products/*.html scr/html/business/*.html")
+- build: ("build": "parcel build src/index.html src/html/products/\*.html scr/html/business/\*.html")
 
     - builds all files with parcel; compiling, linking, and compressing all work for production
