@@ -6,7 +6,7 @@
 
 - npm scripts:
 
-- start: ("start": "live-server dist/ & parcel src/index.html src/html/products/_.html scr/html/business/_.html")
+- start: ("start": "live-server dist/ & parcel src/index.html src/html/products/\*.html scr/html/business/\*.html")
 
     - live-server is started to watch the compiled site changes made by parcel
     - live-server is used over parcel's built in server for more reliable page refreshing
