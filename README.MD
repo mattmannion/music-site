@@ -16,4 +16,4 @@
 
 - build: ("build": "parcel build src/index.html src/html/products/*.html scr/html/business/*.html")
 
-    -builds all files with parcel; compiling, linking, and compressing all work for production
+    - builds all files with parcel; compiling, linking, and compressing all work for production
