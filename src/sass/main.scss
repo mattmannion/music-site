@@ -3,9 +3,9 @@
 @import 'base/base.scss';
 @import 'base/utilities';
 
-@import 'components/nav';
-
+@import 'layout/nav';
 @import 'layout/footer';
+@import 'layout/item-page-master.scss';
 
 @import 'pages/home.scss';
-@import 'pages/item-page-master.scss';
+@import 'pages/search-view.scss';
