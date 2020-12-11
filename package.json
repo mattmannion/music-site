@@ -5,8 +5,7 @@
     "main": "index.html",
     "scripts": {
         "start": "live-server dist/ & parcel src/index.html src/html/business/*.html src/html/product/*.html",
-        "build": "parcel build src/index.html",
-        "sass": "sass src/sass/main.scss src/css/style.css --watch"
+        "build": "parcel build src/index.html"
     },
     "author": "Matt Mannion, William Taylor",
     "license": "ISC",
