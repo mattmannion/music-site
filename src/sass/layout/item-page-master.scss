@@ -1,19 +1,20 @@
-.big-container {
+.showcase__container {
     @include centerContentGrid;
 
-    .showcase_item {
+    .showcase-item {
         display: grid;
         align-items: flex-start;
         justify-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 5rem;
         height: 80vh;
+        grid: 1;
 
-        &-viewer {
+        &__viewer {
             @include centerContentFlex;
             flex-flow: wrap;
 
-            &-grid {
+            .viewer__grid {
                 @include centerContentGrid;
                 grid-template-columns: 1fr 1fr;
                 margin-left: 15rem;
@@ -31,66 +32,61 @@
             }
         }
 
-        &-main {
-
+        &__main {
             img {
                 border-radius: .5rem;
                 height: 100%;
             }
         }
 
-        &-details {
+        &__details {
             @include centerContentGrid;
             font-size: 2rem;
             height: 100%;
+        }
 
-            &-price {
+        &__price {
+            @include centerContentFlex;
+            gap: 10%;
+        }
+
+        &__perks {
+
+            list-style: none;
+            @include centerContentGrid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 5rem;
+
+            li {
+                margin: .5rem;
+                width: 25rem;
                 @include centerContentFlex;
-                gap: 10%;
-            }
+                border: $main-gray .2rem solid;
 
-            &-perks {
-
-                ul {
-                    list-style: none;
-                    @include centerContentGrid;
-                    grid-template-columns: 1fr 1fr;
-                    margin-top: 5rem;
-
-                    li {
-                        margin: .5rem;
-                        width: 25rem;
-                        @include centerContentFlex;
-                        border: $main-gray .2rem solid;
-
-                        ion-icon {
-                            font-size: 3rem;
-                            margin-right: 2rem;
-                        }
-                    }
+                ion-icon {
+                    font-size: 3rem;
+                    margin-right: 2rem;
                 }
             }
 
-            &-addToCart {
-                margin-top: 5rem;
-            }
+        }
 
-            &-options {
-                margin-top: 5rem;
+        &__add-to-cart {
+            margin-top: 5rem;
+        }
 
-                &-grid {
-                    list-style: none;
+        &__options {
+            margin-top: 5rem;
+            list-style: none;
 
-                    li {
-                        display: inline-block;
+            li {
+                display: inline-block;
 
-                        img {
-                            padding: .1rem .3rem;
-                            height: $image-viewer-size;
-                            width: $image-viewer-size;
-                            border-radius: .5rem;
-                        }
-                    }
+                img {
+                    padding: .1rem .3rem;
+                    height: $image-viewer-size;
+                    width: $image-viewer-size;
+                    border-radius: .5rem;
                 }
             }
         }
@@ -98,11 +94,12 @@
 
     .description {
         margin: 0 15rem;
-        margin-top: 15rem;
+        margin-top: 25rem;
         font-size: 2rem;
         text-align: center;
+        grid: 2;
 
-        &_links {
+        &__links {
             @include centerContentGrid;
             grid-template-columns: 1fr 1fr;
             list-style: none;
@@ -116,7 +113,7 @@
             }
         }
 
-        &_info {
+        &__info {
             margin-top: 5rem;
 
             p {
@@ -124,28 +121,23 @@
             }
         }
 
-        &_technical {
+        &__technical {
             margin-top: 5rem;
             width: 100%;
-            @include centerContentFlex;
+            background-color: $light-gray;
+            border-collapse: collapse;
 
-            &-table {
-                width: 100%;
-                background-color: $light-gray;
-                border-collapse: collapse;
+            tr:nth-child(even) {
+                background-color: $medium-gray;
+            }
 
-                tr:nth-child(even) {
-                    background-color: $medium-gray;
-                }
+            td {
+                padding: .5rem;
+                text-align: left;
+            }
 
-                td {
-                    padding: .5rem;
-                    text-align: left;
-                }
-
-                td:nth-child(odd) {
-                    width: 15%;
-                }
+            td:nth-child(odd) {
+                width: 15%;
             }
         }
     }

@@ -4,7 +4,7 @@
     "description": "music site",
     "main": "index.html",
     "scripts": {
-        "start": "live-server dist/ & parcel src/index.html src/html/business/*.html src/html/product/*.html",
+        "start": "live-server dist/ & parcel src/index.html src/html/business/*.html src/html/products/*.html",
         "build": "parcel build src/index.html"
     },
     "author": "Matt Mannion, William Taylor",
