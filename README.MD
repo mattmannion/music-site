@@ -8,11 +8,11 @@
 
 - start: ("start": "live-server dist/ & parcel src/index.html src/html/products/_.html scr/html/business/_.html")
 
-    -live-server is started to watch the compiled site changes made by parcel
-    -live-server is used over parcel's built in server for more reliable page refreshing
+    - live-server is started to watch the compiled site changes made by parcel
+    - live-server is used over parcel's built in server for more reliable page refreshing
 
-    -parcel uses linked main.scss file in all html heads to compile and link scss to css
-    -parcel needs to be pointed to each location to compile and link files correctly and reliably (see above or package.json)
+    - parcel uses linked main.scss file in all html heads to compile and link scss to css
+    - parcel needs to be pointed to each location to compile and link files correctly and reliably (see above or package.json)
 
 - build: ("build": "parcel build src/index.html src/html/products/*.html scr/html/business/*.html")
 
