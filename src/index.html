@@ -8,6 +8,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="sass/main.scss">
     <script defer src="js/controller.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="img/general/logo-icon/favicon-16x16.png">
@@ -19,39 +22,31 @@
 
     <div class="big-container">
 
-        <main class="main center">
+        <main class="main-grid">
             <section class="featured">
-                <img class="featured_main" src="img/vendor/unsplash/hero-guitar-3.jpg"
+                <img class="featured__main" src="img/vendor/unsplash/hero-guitar-3.jpg"
                     alt="Featured Item(s)">
-                <img class="featured_sale" src="img/vendor/unsplash/hero-guitar-2.jpg"
+                <img class="featured__sale" src="img/vendor/unsplash/hero-guitar-2.jpg"
                     alt="Featured Item(s)">
             </section>
-            <section class="detail">
-                <!-- Will be an div carouselin JS  -->
-                <div class="detail_carousel">
-                    <div class="detail_carousel-items">
-                        <div class="detail_carousel-items-left-arrow arrows">
-                            <ion-icon name="chevron-back-circle-outline"></ion-icon>
-                        </div>
-                        <div class="detail_carousel-items-container">
-                            <img src="img/vendor/unsplash/hero-piano-1.jpg" alt="Carousel Item">
-                            <img src="img/vendor/unsplash/hero-piano-1.jpg" alt="Carousel Item">
-                            <img src="img/vendor/unsplash/hero-piano-1.jpg" alt="Carousel Item">
-                        </div>
-                        <div class="detail_carousel-items-right-arrow arrows">
-                            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
-                        </div>
-                    </div>
+            <div class="carousel">
+                <div class="carousel__left-arrow arrows">
+                    <ion-icon name="chevron-back-circle-outline"></ion-icon>
                 </div>
-            </section>
+                <div class="carousel__container">
+                    <img src="img/vendor/unsplash/hero-piano-1.jpg" alt="Carousel Item">
+                    <img src="img/vendor/unsplash/hero-piano-1.jpg" alt="Carousel Item">
+                    <img src="img/vendor/unsplash/hero-piano-1.jpg" alt="Carousel Item">
+                </div>
+                <div class="carousel__right-arrow arrows">
+                    <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
         </main>
 
     </div>
 
     <footer class="footer"></footer>
-
-    <!-- ion-icons -->
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
 </body>
 

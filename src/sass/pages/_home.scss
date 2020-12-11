@@ -1,7 +1,7 @@
 .big-container {
     @include centerContentFlex;
 
-    .main {
+    .main-grid {
         display: grid;
 
         .featured {
@@ -19,47 +19,41 @@
             }
         }
 
-        .detail {
-            // margin: 0 15vh;
+        .carousel {
             margin-top: 5rem;
             grid-row: 2;
             text-align: center;
 
-            &_carousel {
+            @include centerContentGrid;
+            grid-template-columns: 1fr 3fr 1fr;
 
-                &-items {
-                    @include centerContentGrid;
-                    grid-template-columns: 1fr 3fr 1fr;
+            &__container {
+                @include centerContentFlex;
+                flex-flow: wrap;
+                gap: 1%;
+                width: 100%;
+                margin: 0 5rem;
 
-                    &-container {
-                        @include centerContentFlex;
-                        flex-flow: wrap;
-                        gap: 1%;
-                        width: 100%;
-                        margin: 0 5rem;
-
-                        img {
-                            height: $hero-image-size-s;
-                            margin-top: 1%;
-                            border-radius: .5rem;
-                            overflow: hidden;
-                        }
-                    }
-
-                    & .arrows {
-                        color: $medium-gray;
-                        font-size: 5rem;
-                        cursor: pointer;
-                    }
-
-                    &-left-arrow {
-                        transform: translateX(7.5rem);
-                    }
-
-                    &-right-arrow {
-                        transform: translateX(-7.5rem);
-                    }
+                img {
+                    height: $hero-image-size-s;
+                    margin-top: 1%;
+                    border-radius: .5rem;
+                    overflow: hidden;
                 }
+            }
+
+            & .arrows {
+                color: $medium-gray;
+                font-size: 5rem;
+                cursor: pointer;
+            }
+
+            &__left-arrow {
+                transform: translateX(7.5rem);
+            }
+
+            &__right-arrow {
+                transform: translateX(-7.5rem);
             }
         }
     }

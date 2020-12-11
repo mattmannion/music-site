@@ -1,88 +1,88 @@
 .nav {
 
-    &_top {
+    &-top {
         background-color: $light-gray;
         padding: 2rem;
-        position: relative;
 
-        &-container {
+        &__container {
             font-size: 1.5rem;
             @include centerContentFlex;
-            gap: 5%;
             flex-flow: wrap;
         }
 
-        &-logo a:visited,
-        &-logo a:link,
-        &-logo a:active,
-        &-logo a:hover {
+        &__logo a:visited,
+        &__logo a:link,
+        &__logo a:active,
+        &__logo a:hover {
             @include centerContentFlex;
             text-decoration: none;
             color: black;
         }
 
-        &-search {
-            position: relative;
+        &__search {
             display: flex;
-            min-width: 40%;
             @include centerContentFlex;
+            width: 50%;
 
-            &-button {
-                font-size: 3rem;
+            .search-button {
                 color: $light-gray;
                 background-color: $main-gray;
                 border: transparent;
                 height: 4.3rem;
-                width: 4.7rem;
+                width: 4.3rem;
                 border-radius: .5rem 0 0 .5rem;
                 outline: 0;
                 cursor: pointer;
                 @include centerContentFlex;
+
+                ion-icon {
+                    font-size: 3rem;
+                }
             }
 
-            &-bar {
+            .search-bar {
                 font-size: 2rem;
                 border: .15rem solid $main-gray;
                 border-radius: 0 .5rem .5rem 0;
                 height: 3rem;
-                width: 100%;
+                min-width: 40%;
                 padding: .5rem;
                 outline: 0;
             }
         }
 
-        &-group {
+        &__phone-cart-group {
             @include centerContentFlex;
+        }
 
-            &-phoneNumber {
-                @include centerContentFlex;
-                margin-right: 5rem;
+        &__phone-number {
+            @include centerContentFlex;
+            margin-right: 5rem;
 
-                ion-icon {
-                    font-size: 2.5rem;
-                    margin-right: 1rem;
-                    transform: translateY(5px);
-                }
-
-                & p {
-                    font-size: 2rem;
-                }
+            ion-icon {
+                font-size: 2.5rem;
+                margin-right: 1rem;
+                transform: translateY(5px);
             }
 
-            &-cart {
-                ion-icon {
-                    font-size: 5rem;
-                }
+            & p {
+                font-size: 2rem;
+            }
+        }
+
+        &__cart {
+            ion-icon {
+                font-size: 5rem;
             }
         }
     }
 
-    &_bot {
+    &-bot {
         border-top: .1rem solid $light-gray;
         border-bottom: .1rem solid $light-gray;
         margin-top: 5rem;
 
-        &-container {
+        &__container {
             font-size: 1.6rem;
             color: main-gray;
             padding: .5rem 0;
