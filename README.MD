@@ -1,6 +1,6 @@
 - BEM Architecture in use for css(scss)  -  https://css-tricks.com/bem-101/
 
-- 7-1 Pattern Architecture in use for Sass files and folders  -  https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture
+- 7-1 Pattern Architecture in use for Sass  -  https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture
 
 - MVC Architecture in use for JavaScript  -    https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
 
