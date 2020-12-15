@@ -1,0 +1,18 @@
+.search-view {
+    font-size: 2rem;
+    @include centerContentGrid;
+    grid-template-columns: 1fr 3fr;
+
+    .side-bar {
+        font-size: 1.5rem;
+
+        &__categories {
+            list-style: none;
+            text-align: center;
+
+            ul {
+                list-style: none;
+            }
+        }
+    }
+}
