@@ -23,10 +23,6 @@
         }
     }
 
-    &__container {
-        // 
-    }
-
     &__header {
         @include centerContentGrid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -46,5 +42,4 @@
             background-color: $main-gray;
         }
     }
-
 }
