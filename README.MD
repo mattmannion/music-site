@@ -1,3 +1,5 @@
+--ON GOING--
+
 - BEM Architecture in use for css(scss)  -  https://css-tricks.com/bem-101/
 
 - 7-1 Pattern Architecture in use for Sass  -  https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture
